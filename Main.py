@@ -139,7 +139,7 @@ def main():
         cv2.imshow('config', frame_config)
         cv2.moveWindow('config', 10, 730)
 
-        if (drawing):  # Left click push
+        if (drawing):  #  Left click push
             temp = temp00.copy()
             if mode == 'Line':
                 temp = cv2.line(temp, (ix, iy), (ix + width, iy + height), linecolour, 1)  # Draw straight lines
@@ -211,7 +211,6 @@ def main():
                 print('save files')
 
     cv2.destroyAllWindows()
-
 
 if __name__ == "__main__":
     main()
